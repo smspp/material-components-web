@@ -60,9 +60,9 @@
 }
 
 @mixin mdc-chip-selected-ink-color($color) {
-  &.mdc-chip {
+  // &.mdc-chip {
     @include mdc-states-selected($color);
-  }
+  // }
 
   &.-selected {
     @include mdc-theme-prop(color, $color);
