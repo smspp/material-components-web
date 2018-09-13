@@ -118,12 +118,12 @@
     }
   }
 
-  &--closed {
+  &.-closed {
     opacity: 0;
   }
 }
 
-@at-root {
+.mdc-linear-progress {
   @include mdc-linear-progress-bar-color(primary);
   @include mdc-linear-progress-buffer-color($mdc-linear-progress-baseline-buffer-color);
 }
