@@ -23,7 +23,7 @@
 // Public mixins
 
 @mixin mdc-text-field-icon-color($color) {
-  &:not(.mdc-text-field--disabled) {
+  &:not(.-disabled) {
     @include mdc-text-field-icon-color_($color);
   }
 }
@@ -31,17 +31,17 @@
 // Private mixins
 
 @mixin mdc-text-field-icon-horizontal-position_($position-property, $position, $padding) {
-  .mdc-text-field__icon {
+  .icon {
     @include mdc-rtl-reflexive-position($position-property, $position);
   }
 
   // Move the input's position, to allow room for the icon
   @if ($position-property == left) {
-    .mdc-text-field__input {
+    .input {
       @include mdc-rtl-reflexive-property(padding, $padding /* left-value */, $position  /* right-value */);
     }
   } @else {
-    .mdc-text-field__input {
+    .input {
       @include mdc-rtl-reflexive-property(padding, $position /* left-value */, $padding  /* right-value */);
     }
   }
@@ -56,7 +56,7 @@
 }
 
 @mixin mdc-text-field-icon-color_($color) {
-  .mdc-text-field__icon {
+  .icon {
     @include mdc-theme-prop(color, $color);
   }
 }
