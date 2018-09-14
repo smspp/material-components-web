@@ -26,7 +26,7 @@
   overflow: hidden; // Prevent overflowed borders from encroaching on surrounding elements
 }
 
-.mdc-shape-containe > .corner {
+.mdc-shape-container > .corner {
   position: absolute;
   // IE and Edge require z-index set to 1 to properly mask ripple.
   z-index: 1;
@@ -53,6 +53,6 @@
   transform: rotate(135deg);
 }
 
-.mdc-shape-container > .corner.bottomleft {
+.mdc-shape-container > .corner.-bottomleft {
   transform: rotate(-135deg);
 }
