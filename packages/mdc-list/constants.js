@@ -24,10 +24,11 @@
 /** @enum {string} */
 const cssClasses = {
   ROOT: 'mdc-list',
-  LIST_ITEM_CLASS: 'mdc-list-item',
-  LIST_ITEM_SELECTED_CLASS: 'mdc-list-item--selected',
-  LIST_ITEM_ACTIVATED_CLASS: 'mdc-list-item--activated',
+  LIST_ITEM_CLASS: 'item',
+  LIST_ITEM_SELECTED_CLASS: '-selected',
+  LIST_ITEM_ACTIVATED_CLASS: '-activated',
 };
+
 
 /** @enum {string} */
 const strings = {
@@ -35,7 +36,7 @@ const strings = {
   ARIA_ORIENTATION_HORIZONTAL: 'horizontal',
   ARIA_SELECTED: 'aria-selected',
   FOCUSABLE_CHILD_ELEMENTS: `.${cssClasses.LIST_ITEM_CLASS} button:not(:disabled), .${cssClasses.LIST_ITEM_CLASS} a`,
-  ENABLED_ITEMS_SELECTOR: '.mdc-list-item:not(.mdc-list-item--disabled)',
+  ENABLED_ITEMS_SELECTOR: '.item:not(.-disabled)',
 };
 
 export {strings, cssClasses};
