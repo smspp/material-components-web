@@ -59,30 +59,30 @@
     </style>
   </head>
   <body class="mdc-typography">
-    <header class="mdc-toolbar mdc-toolbar--fixed">
-      <div class="mdc-toolbar__row">
-        <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
-          <a href="/" class="catalog-back mdc-toolbar__menu-icon"><i class="material-icons">&#xE5C4;</i></a>
-          <span class="mdc-toolbar__title catalog-title">Dialog</span>
+    <header class="mdc-toolbar -fixed">
+      <div class="row">
+        <section class="section -alignstart">
+          <a href="/" class="catalog-back menuicon"><i class="material-icons">&#xE5C4;</i></a>
+          <span class="title catalog-title">Dialog</span>
         </section>
       </div>
     </header>
     <main>
       <div class="mdc-toolbar-fixed-adjust"></div>
       <section class="hero">
-        <aside class="catalog-dialog-demo mdc-dialog mdc-dialog--open">
-          <div class="mdc-dialog__surface">
-            <header class="mdc-dialog__header">
-              <h2 id="mdc-dialog-default-label" class="mdc-dialog__header__title">
+        <aside class="catalog-dialog-demo mdc-dialog -open">
+          <div class="surface">
+            <header class="header">
+              <h2 id="mdc-dialog-default-label" class="title">
                 Are you happy?
               </h2>
             </header>
-            <section id="mdc-dialog-default-description" class="mdc-dialog__body">
+            <section id="mdc-dialog-default-description" class="body">
               Please check the left and right side of this element for fun.
             </section>
-            <footer class="mdc-dialog__footer">
-              <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Cancel</button>
-              <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept">Continue</button>
+            <footer class="footer">
+              <button type="button" class="mdc-button button -cancel">Cancel</button>
+              <button type="button" class="mdc-button button -accept">Continue</button>
             </footer>
           </div>
         </aside>
@@ -95,21 +95,21 @@
                aria-hidden="true"
                aria-labelledby="mdc-dialog-default-label"
                aria-describedby="mdc-dialog-default-description">
-          <div class="mdc-dialog__surface">
-            <header class="mdc-dialog__header">
-              <h2 id="mdc-dialog-default-label" class="mdc-dialog__header__title">
+          <div class="surface">
+            <header class="header">
+              <h2 id="mdc-dialog-default-label" class="title">
                 Use Google's location service?
               </h2>
             </header>
-            <section id="mdc-dialog-default-description" class="mdc-dialog__body">
+            <section id="mdc-dialog-default-description" class="body">
               Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
             </section>
-            <footer class="mdc-dialog__footer">
-              <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Decline</button>
-              <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept">Accept</button>
+            <footer class="footer">
+              <button type="button" class="mdc-button button -cancel">Decline</button>
+              <button type="button" class="mdc-button button -accept">Accept</button>
             </footer>
           </div>
-          <div class="mdc-dialog__backdrop"></div>
+          <div class="backdrop"></div>
         </aside>
 
         <aside id="mdc-dialog-colored-footer-buttons"
@@ -118,21 +118,21 @@
                aria-hidden="true"
                aria-labelledby="mdc-dialog-colored-footer-button-label"
                aria-describedby="mdc-dialog-colored-footer-button-description">
-          <div class="mdc-dialog__surface">
-            <header class="mdc-dialog__header">
-              <h2 id="mdc-dialog-colored-footer-button-label" class="mdc-dialog__header__title">
+          <div class="surface">
+            <header class="header">
+              <h2 id="mdc-dialog-colored-footer-button-label" class="title">
                 Use Google's location service?
               </h2>
             </header>
-            <section id="mdc-dialog-colored-footer-button-description" class="mdc-dialog__body">
+            <section id="mdc-dialog-colored-footer-button-description" class="body">
               Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.
             </section>
-            <footer class="mdc-dialog__footer">
-              <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Decline</button>
-              <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept mdc-dialog__action">Accept</button>
+            <footer class="footer">
+              <button type="button" class="mdc-button button -cancel">Decline</button>
+              <button type="button" class="mdc-button button -accept -action">Accept</button>
             </footer>
           </div>
-          <div class="mdc-dialog__backdrop"></div>
+          <div class="backdrop"></div>
         </aside>
 
         <aside id="mdc-dialog-with-list"
@@ -141,96 +141,96 @@
                aria-hidden="true"
                aria-labelledby="mdc-dialog-with-list-label"
                aria-describedby="mdc-dialog-with-list-description">
-          <div class="mdc-dialog__surface">
-            <header class="mdc-dialog__header">
-              <h2 id="mdc-dialog-with-list-label" class="mdc-dialog__header__title">
+          <div class="surface">
+            <header class="header">
+              <h2 id="mdc-dialog-with-list-label" class="title">
                 Choose a Ringtone
               </h2>
             </header>
-            <section id="mdc-dialog-with-list-description" class="mdc-dialog__body mdc-dialog__body--scrollable">
+            <section id="mdc-dialog-with-list-description" class="body -scrollable">
               <ul class="mdc-list">
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
+                <li class="item">
+                  <span class="text">
                     None
                   </span>
                 </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
+                <li class="item">
+                  <span class="text">
                     Callisto
                   </span>
                 </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
+                <li class="item">
+                  <span class="text">
                     Ganymede
                   </span>
                 </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
+                <li class="item">
+                  <span class="text">
                     Luna
                   </span>
                 </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
+                <li class="item">
+                  <span class="text">
                     Marimba
                   </span>
                 </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
+                <li class="item">
+                  <span class="text">
                     Schwifty
                   </span>
                 </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
+                <li class="item">
+                  <span class="text">
                     Callisto
                   </span>
                 </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
+                <li class="item">
+                  <span class="text">
                     Ganymede
                   </span>
                 </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
+                <li class="item">
+                  <span class="text">
                     Luna
                   </span>
                 </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
+                <li class="item">
+                  <span class="text">
                     Marimba
                   </span>
                 </li>
-                <li class="mdc-list-item">
-                  <span class="mdc-list-item__text">
+                <li class="item">
+                  <span class="text">
                     Schwifty
                   </span>
                 </li>
               </ul>
             </section>
-            <footer class="mdc-dialog__footer">
-              <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Decline</button>
-              <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept">Accept</button>
+            <footer class="footer">
+              <button type="button" class="mdc-button button -cancel">Decline</button>
+              <button type="button" class="mdc-button button -accept">Accept</button>
             </footer>
           </div>
-          <div class="mdc-dialog__backdrop"></div>
+          <div class="backdrop"></div>
         </aside>
       </div>
       <section class="example">
-        <button id="default-dialog-activation" class="mdc-button mdc-button--raised">Show Dialog</button>
-        <button id="colored-footer-button-dialog-activation" class="mdc-button mdc-button--raised">Show Colored Footer Button Dialog</button>
-        <button id="dialog-with-list-activation" class="mdc-button mdc-button--raised">Show Scrolling Dialog</button>
+        <button id="default-dialog-activation" class="mdc-button -raised">Show Dialog</button>
+        <button id="colored-footer-button-dialog-activation" class="mdc-button -raised">Show Colored Footer Button Dialog</button>
+        <button id="dialog-with-list-activation" class="mdc-button -raised">Show Scrolling Dialog</button>
         <div class="mdc-form-field">
           <div class="mdc-checkbox">
             <input type="checkbox"
                    id="toggle-rtl"
-                   class="mdc-checkbox__native-control"/>
-            <div class="mdc-checkbox__background">
-              <svg class="mdc-checkbox__checkmark"
+                   class="nativecontrol"/>
+            <div class="background">
+              <svg class="checkmark"
                   viewBox="0 0 24 24">
-                <path class="mdc-checkbox__checkmark-path"
+                <path class="path"
                       fill="none"
                       d="M1.73,12.91 8.1,19.28 22.79,4.59"/>
               </svg>
-              <div class="mdc-checkbox__mixedmark"></div>
+              <div class="mixedmark"></div>
             </div>
           </div>
           <label for="toggle-rtl">Toggle RTL</label>
