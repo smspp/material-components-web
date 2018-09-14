@@ -53,7 +53,7 @@ body {
   width: 360px;
 }
 
-.mdc-menu-surface--anchor {
+.mdc-menu-surface-anchor {
   position: absolute;
   margin: 16px;
 }
@@ -82,4 +82,33 @@ body {
 
 .hero .mdc-menu-surface {
   z-index: 1;
+}
+
+.mdc-list .selectiongroup > .item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+  height: 48px;
+  padding: 0 $mdc-list-side-padding;
+  overflow: hidden;
+  @include mdc-rtl-reflexive-box(padding, left, 56px); // .mdc-memu .selectiongroup
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.mdc-list:not(.-noninteractive) .selectiongroup > :not(.-disabled).item {
+  @include mdc-ripple-surface;
+  @include mdc-ripple-radius-bounded;
+  @include mdc-states;
+}
+
+.mdc-list .selectiongroup > .item.-disabled {
+  @include mdc-list-item-primary-text-ink-color(text-disabled-on-background);
+}
+
+.mdc-list .selectiongroup > .item > .text {
+  @include mdc-typography-overflow-ellipsis;
 }
