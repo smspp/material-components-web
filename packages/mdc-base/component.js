@@ -115,15 +115,17 @@ class MDCComponent {
   emit(evtType, evtData, shouldBubble = false) {
     let evt;
     if (typeof CustomEvent === 'function') {
+      console.log(1)
       evt = new CustomEvent(evtType, {
         detail: evtData,
         bubbles: shouldBubble,
       });
     } else {
+      console.log(2)
       evt = document.createEvent('CustomEvent');
       evt.initCustomEvent(evtType, shouldBubble, false, evtData);
     }
-
+    console.log(evt)
     this.root_.dispatchEvent(evt);
   }
 }
