@@ -51,13 +51,13 @@
 // Sets the background color used for masking.
 // Exposed separately to allow overriding for some shapes within a page which happen to be over a different background.
 @mixin mdc-shape-angled-corner-background($background-color) {
-  .corner::after {
+  > .corner::after {
     background-color: $background-color;
   }
 }
 
 @mixin mdc-shape-angled-corner-outline($outline-width, $outline-color, $outline-style: solid) {
-  .corner::before {
+  > .corner::before {
     top: $outline-width;
     border-bottom: $outline-width $outline-style $outline-color;
   }
