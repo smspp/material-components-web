@@ -25,7 +25,7 @@
 const cssClasses = {
   ROOT: 'mdc-menu',
   MENU_SELECTED_LIST_ITEM: '-selected',
-  MENU_SELECTION_GROUP: 'selectiongroup',
+  MENU_SELECTION_GROUP: '.mdc-menu-selection-group',
 };
 
 /** @enum {string} */

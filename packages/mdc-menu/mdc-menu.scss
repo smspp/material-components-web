@@ -50,16 +50,16 @@
 }
 
 // postcss-bem-linter: define menu
-.mdc-menu .selectiongroup {
+.mdc-menu-selection-group {
   padding: 0;
   fill: currentColor;
 
-  .mdc-list > .item {
+  > .item {
     @include mdc-rtl-reflexive-box(padding, left, 56px);
   }
 }
 
-.mdc-menu .mdc-list > .item > .selectionicon {
+.mdc-menu-selection-group > .item > .selectionicon {
   @include mdc-rtl-reflexive-position(left, 16px);
 
   display: none;
@@ -67,7 +67,7 @@
 }
 
 // stylelint-disable-next-line plugin/selector-bem-pattern
-.mdc-menu .mdc-list > .item.-selected > .selectionicon {
+.mdc-menu-selection-group > .item.-selected > .selectionicon {
   display: inline;
 }
 
