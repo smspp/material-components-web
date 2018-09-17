@@ -26,27 +26,27 @@
 
 @mixin mdc-radio-unchecked-stroke-color($color) {
   // stylelint-disable-next-line selector-max-specificity
-  .nativecontrol:enabled:not(:checked) + .background > .outer {
+  > .nativecontrol:enabled:not(:checked) + .background > .outer {
     @include mdc-theme-prop(border-color, $color);
   }
 }
 
 @mixin mdc-radio-checked-stroke-color($color) {
   // stylelint-disable-next-line selector-max-specificity
-  .nativecontrol:enabled:checked + .background > .outer {
+  > .nativecontrol:enabled:checked + .background > .outer {
     @include mdc-theme-prop(border-color, $color);
   }
 }
 
 @mixin mdc-radio-ink-color($color) {
   // stylelint-disable-next-line selector-max-specificity
-  .nativecontrol:enabled + .background > .inner {
+  > .nativecontrol:enabled + .background > .inner {
     @include mdc-theme-prop(border-color, $color);
   }
 }
 
 @mixin mdc-radio-focus-indicator-color($color) {
-  .background::before {
+  > .background::before {
     @include mdc-theme-prop(background-color, $color, $edgeOptOut: true);
   }
 }
