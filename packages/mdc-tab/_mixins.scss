@@ -25,13 +25,13 @@
 // Public mixins
 
 @mixin mdc-tab-text-label-color($color) {
-  .textlabel {
+  > .content > .textlabel {
     @include mdc-theme-prop(color, $color);
   }
 }
 
 @mixin mdc-tab-icon-color($color) {
-  .icon {
+  > .content > .icon {
     @include mdc-theme-prop(color, $color);
   }
 }
