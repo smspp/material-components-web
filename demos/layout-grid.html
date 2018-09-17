@@ -51,7 +51,11 @@
         background-color: #aaaaaa;
       }
 
-      .demo-parent-cell>span{
+      .demo-parent-cell > .mdc-layout-grid {
+        padding: 0;
+      }
+
+      .demo-parent-cell > .mdc-layout-grid > span{
         position: absolute;
         top: 8px;
         left: 8px;
@@ -269,18 +273,20 @@
           <div class="demo-grid mdc-layout-grid">
             <div class="inner">
               <div class="demo-parent-cell cell -span4">
-                <div class="inner">
-                  <div class="demo-child-cell demo-cell cell -span4">
-                    <span>Child 4</span>
+                <div class="mdc-layout-grid">
+                  <div class="inner">
+                    <div class="demo-child-cell demo-cell cell -span4">
+                      <span>Child 4</span>
+                    </div>
+                    <div class="demo-child-cell demo-cell cell -span4">
+                      <span>Child 4</span>
+                    </div>
+                    <div class="demo-child-cell demo-cell cell -span4">
+                      <span>Child 4</span>
+                    </div>
                   </div>
-                  <div class="demo-child-cell demo-cell cell -span4">
-                    <span>Child 4</span>
-                  </div>
-                  <div class="demo-child-cell demo-cell cell -span4">
-                    <span>Child 4</span>
-                  </div>
+                  <span>Parent 4</span>
                 </div>
-                <span>Parent 4</span>
               </div>
               <div class="demo-cell cell -span4">4</div>
               <div class="demo-cell cell -span4">4</div>

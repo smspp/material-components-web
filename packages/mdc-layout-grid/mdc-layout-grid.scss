@@ -40,7 +40,7 @@
   }
 }
 
-.mdc-layout-grid > .inner, .mdc-layout-grid .inner {
+.mdc-layout-grid > .inner {
   @each $size in map-keys($mdc-layout-grid-columns) {
     @include mdc-layout-grid-media-query_($size) {
       $margin: map-get($mdc-layout-grid-default-margin, $size);
@@ -51,7 +51,7 @@
   }
 }
 
-.mdc-layout-grid > .inner > .cell, .mdc-layout-grid .inner > .cell {
+.mdc-layout-grid > .inner > .cell {
   // select the upper breakpoint
   $upper-breakpoint: nth(map-keys($mdc-layout-grid-columns), 1);
 
