@@ -31,31 +31,31 @@
 }
 
 @mixin mdc-list-item-secondary-text-ink-color($color) {
-  .item > .text > .secondary {
+  > .item > .text > .secondary {
     @include mdc-theme-prop(color, $color);
   }
 }
 
 @mixin mdc-list-item-graphic-fill-color($color) {
-  .item > .graphic {
+  > .item > .graphic {
     @include mdc-theme-prop(background-color, $color);
   }
 }
 
 @mixin mdc-list-item-graphic-ink-color($color) {
-  .item > .graphic {
+  > .item > .graphic {
     @include mdc-theme-prop(color, $color);
   }
 }
 
 @mixin mdc-list-item-meta-ink-color($color) {
-  .item > .meta {
+  > .item > .meta {
     @include mdc-theme-prop(color, $color);
   }
 }
 
 @mixin mdc-list-item-corner-radius($radius) {
-  .item {
+  > .item {
     border-radius: $radius;
   }
 }
@@ -67,7 +67,7 @@
 }
 
 @mixin mdc-list-group-subheader-ink-color($color) {
-  .subheader {
+  > .subheader {
     @include mdc-theme-prop(color, $color);
   }
 }
