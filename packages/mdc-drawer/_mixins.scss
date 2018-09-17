@@ -50,7 +50,7 @@
 @mixin mdc-drawer-title-ink-color($color) {
   $value: rgba(mdc-theme-prop-value($color), $mdc-drawer-title-ink-opacity);
 
-  .header > .title {
+  > .header > .title {
     @include mdc-theme-prop(color, $value);
   }
 }
@@ -60,7 +60,7 @@
 
   @include mdc-list-group-subheader-ink-color($value);
 
-  .header > .subtitle {
+  > .header > .subtitle {
     @include mdc-theme-prop(color, $value);
   }
 }
