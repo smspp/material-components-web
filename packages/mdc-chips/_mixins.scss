@@ -73,7 +73,7 @@
     }
   }
 
-  .path {
+  > .checkmark > .svg > .path {
     @include mdc-theme-prop(stroke, $color);
   }
 }
@@ -107,7 +107,7 @@
 
 @mixin mdc-chip-set-spacing($gap-size) {
   padding: $gap-size / 2;
-  .mdc-chip {
+  > .mdc-chip {
     margin: $gap-size / 2;
   }
 }
