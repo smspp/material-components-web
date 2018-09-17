@@ -95,33 +95,33 @@
 //
 
 @mixin mdc-slider-highlight-color_($color) {
-  .track {
+  > .trackcontainer > .track {
     @include mdc-theme-prop(background-color, $color);
   }
 }
 
 @mixin mdc-slider-rail-color_($color, $opacity: $mdc-slider-baseline-rail-opacity) {
-  .trackcontainer {
+  > .trackcontainer {
     @include mdc-theme-prop(background-color, rgba(mdc-theme-prop-value($color), $opacity));
   }
 }
 
 @mixin mdc-slider-rail-tick-mark-color_($color) {
-  .marker::after,
-  .markercontainer::after {
+  > .trackcontainer > .markercontainer > .marker::after,
+  > .trackcontainer > .markercontainer::after {
     @include mdc-theme-prop(background-color, $color);
   }
 }
 
 @mixin mdc-slider-thumb-color_($color) {
-  .thumb {
+  > .thumbcontainer > .thumb {
     @include mdc-theme-prop(fill, $color);
     @include mdc-theme-prop(stroke, $color);
   }
 }
 
 @mixin mdc-slider-thumb-stroke-cutout_($color) {
-  .thumb {
+  > .thumbcontainer > .thumb {
     /* @alternate */
     stroke: $color;
     stroke: var(--mdc-slider-bg-color-behind-component, $color);
