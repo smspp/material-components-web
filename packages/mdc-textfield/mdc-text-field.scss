@@ -76,7 +76,7 @@
   will-change: opacity, transform, color;
 
   // stylelint-disable-next-line plugin/selector-bem-pattern
-  .mdc-floating-label {
+  > .mdc-floating-label {
     @include mdc-rtl-reflexive-position(left, 12px);
 
     pointer-events: none;
@@ -152,7 +152,7 @@
 }
 
 // stylelint-disable plugin/selector-bem-pattern
-.mdc-text-field.-leadingicon.mdc-text-field.-dense .mdc-text-field > .icon,
+.mdc-text-field.-leadingicon.-dense > .icon,
 .mdc-text-field.-trailingicon.-dense > .icon {
   bottom: 16px;
   transform: scale(.8);
@@ -222,7 +222,7 @@
   @include mdc-text-field-focused_;
 }
 
-.mdc-text-field.-textarea.mdc-text-field.-focused {
+.mdc-text-field.-textarea.-focused {
   @include mdc-text-field-textarea-stroke-color(primary);
 }
 
@@ -230,11 +230,11 @@
   @include mdc-text-field-invalid_;
 }
 
-.mdc-text-field.-textarea.mdc-text-field.-invalid {
+.mdc-text-field.-textarea.-invalid {
   @include mdc-text-field-textarea-invalid_;
 }
 
-.mdc-text-field.-outlined.mdc-text-field.-invalid {
+.mdc-text-field.-outlined.-invalid {
   @include mdc-text-field-outlined-invalid_;
 }
 
@@ -242,7 +242,7 @@
   @include mdc-text-field-disabled_;
 }
 
-.mdc-text-field.-textarea.mdc-text-field.-disabled {
+.mdc-text-field.-textarea.-disabled {
   @include mdc-text-field-textarea-disabled_;
 }
 

@@ -36,13 +36,13 @@
 @mixin mdc-text-field-textarea-corner-radius($radius) {
   border-radius: $radius;
 
-  .mdc-floating-label {
+  > .mdc-floating-label {
     // Bottom corners are square to prevent weird edge cases
     // where text would be visible outside of the curve.
     border-radius: $radius $radius 0 0;
   }
 
-  .input {
+  > .input {
     // The input element is required to have 2 pixels shaved off
     // of the radius of its parent. This prevents an ugly space of
     // background between the two borders in each corner when the
@@ -152,7 +152,7 @@
   border-bottom: none;
   pointer-events: none;
 
-  .mdc-floating-label {
+  > .mdc-floating-label {
     cursor: default;
   }
 }
@@ -241,7 +241,7 @@
   @include mdc-text-field-outline-color_($mdc-text-field-outlined-disabled-border);
   @include mdc-text-field-fill-color_(transparent);
 
-  .input {
+  > .input {
     border-bottom: none;
   }
 }
@@ -473,7 +473,7 @@
 // Customization
 
 @mixin mdc-text-field-ink-color_($color) {
-  .input {
+  > .input {
     @include mdc-theme-prop(color, $color);
   }
 }
@@ -485,7 +485,7 @@
 @mixin mdc-text-field-textarea-stroke-color_($color) {
   @include mdc-theme-prop(border-color, $color);
 
-  .input:focus {
+  > .input:focus {
     @include mdc-theme-prop(border-color, $color);
   }
 }
@@ -501,30 +501,30 @@
 }
 
 @mixin mdc-text-field-bottom-line-color_($color) {
-  .input {
+  > .input {
     @include mdc-theme-prop(border-bottom-color, $color);
   }
 }
 
 @mixin mdc-text-field-hover-bottom-line-color_($color) {
-  .input:hover {
+  > .input:hover {
     @include mdc-theme-prop(border-bottom-color, $color);
   }
 }
 
 @mixin mdc-text-field-line-ripple-color_($color) {
-  .mdc-line-ripple {
+  > .mdc-line-ripple {
     @include mdc-line-ripple-color($color);
   }
 }
 
 @mixin mdc-text-field-label-ink-color_($color) {
-  .mdc-floating-label {
+  > .mdc-floating-label {
     @include mdc-floating-label-ink-color($color);
   }
 
   // CSS-only version
-  .input::placeholder {
+  > .input::placeholder {
     @include mdc-theme-prop(color, $color);
   }
 }
