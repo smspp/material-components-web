@@ -110,20 +110,20 @@ $mdc-tab-with-icon-and-text-height: 72px;
 
 // stylelint-disable plugin/selector-bem-pattern, selector-max-specificity
 .mdc-tab-bar:not(.mdc-tab-bar-upgraded) {
-  .mdc-tab.-active,
-  .mdc-tab:hover,
-  .mdc-tab:active {
+  &.-active,
+  &:hover,
+  &:active {
     >.indicator {
       visibility: visible;
     }
   }
 
-  .mdc-tab:not(.-active):hover > .indicator {
+  &:not(.-active):hover > .indicator {
     opacity: .38;
   }
 
-  .-active,
-  .mdc-tab:not(.-active):active > .indicator {
+  &.-active,
+  &:not(.-active):active > .indicator {
     opacity: .87;
   }
 }
