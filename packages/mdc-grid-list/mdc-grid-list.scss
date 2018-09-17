@@ -32,23 +32,23 @@ $mdc-grid-list-twoline-cap-secondary-height: 68px;
 $mdc-grid-list-tile-secondary-icon-size: 24px;
 
 @mixin mdc-grid-list-tile-aspect($width-height-ratio) {
-  .primary {
+  > .tiles > .tile > .primary {
     padding-bottom: calc(100% / #{$width-height-ratio});
   }
 }
 
 @mixin mdc-grid-list-tile-gutter($gutter-width) {
-  .tile {
+  > .tiles > .tile {
     margin: $gutter-width/2 0;
     padding: 0 $gutter-width/2;
   }
 
-  .secondary {
+  > .tiles > .tile > .secondary {
     left: $gutter-width/2;
     width: calc(100% - #{$gutter-width});
   }
 
-  .tiles {
+  > .tiles {
     margin: $gutter-width/2 auto;
   }
 }
