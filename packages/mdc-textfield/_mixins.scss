@@ -318,8 +318,8 @@
 
 @mixin mdc-text-field-hover-outline-color_($color) {
   &:not(.-focused) {
-    .input:hover ~,
-    .icon:hover ~ {
+    > .input:hover ~,
+    > .icon:hover ~ {
       @include mdc-notched-outline-idle-color($color);
 
       // tldr; this doesn't break BEM:
