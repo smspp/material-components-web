@@ -57,7 +57,7 @@
 
 @mixin mdc-top-app-bar-mobile-breakpoint_($mobile-breakpoint: $mdc-top-app-bar-mobile-breakpoint) {
   @media (max-width: $mobile-breakpoint) {
-    .mdc-to-app-bar > .row {
+    .mdc-top-app-bar > .row {
       height: $mdc-top-app-bar-mobile-row-height;
     }
 
